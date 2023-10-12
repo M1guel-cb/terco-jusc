@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Card</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <style>
             * {
                 padding: 0;
@@ -42,13 +43,14 @@
             #front {
                 background-color: rgb(21, 166, 224);
                 transform: rotateY(180deg);
+                overflow: hidden;
             }
 
             .face {
                 height: 92vw;
                 width: 92vw;
                 position: absolute;
-                border-radius: 10px;
+                border-radius: 3%;
             }
 
             .flip {
@@ -69,17 +71,15 @@
                 padding: 20px;
                 margin: 10px 0;
             }
+            #front img {
+                width: 100%;
+            }
         </style>
     </head>
     <body>
         <div id="card" class="flip">
             <div id="front" class="face">
-                <h1>Teste</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus reiciendis ex sequi dolorem dolore tempore culpa iste eaque excepturi iusto aliquam nobis incidunt necessitatibus, est recusandae praesentium quas quis voluptate.</p>
-                <h1>Teste</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus reiciendis ex sequi dolorem dolore tempore culpa iste eaque excepturi iusto aliquam nobis incidunt necessitatibus, est recusandae praesentium quas quis voluptate.</p>
-                <h1>Teste</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus reiciendis ex sequi dolorem dolore tempore culpa iste eaque excepturi iusto aliquam nobis incidunt necessitatibus, est recusandae praesentium quas quis voluptate.</p>
+                <img src="assets/images/jesus-misericordioso.jpg" alt="Jesus Misericordioso" />
             </div>
             <div id="back" class="face">
                 <h1>Teste</h1>
@@ -99,5 +99,5 @@
             <button onclick="flip(5)">Oração da Medalha de São Bento</button>
         </div>
     </body>
-    <script src="script.js"></script>
+    <script src="assets/scripts/script.js"></script>
 </html>

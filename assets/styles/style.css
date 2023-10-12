@@ -12,6 +12,37 @@ body, html {
     height: 100vh;
 }
 
+#voltar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100px;
+    background-color: #15a6e0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px 80px;
+    border-radius: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.3em;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#voltar a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+#voltar a:hover {
+    text-decoration: underline;
+    transform: translatey(-5px);
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+}
+
 header {
     height: 300px;
     background-image: linear-gradient(to bottom, rgb(94, 94, 94), transparent);
@@ -105,7 +136,7 @@ div {
 
 iframe {
     width: 650px;
-    height: 850px;
+    height: 820px;
 }
 
 section:last-child {

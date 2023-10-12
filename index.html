@@ -1,67 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/mq.css">
-    <title>Guia para o terço</title>
-</head>
-<body>
-    <header>
-        <img src="imagens/jusc-azul.png" alt="JUSC" id="jusc-logo">
-        <h1>Guia Para o Terço</h1>
-    </header>
-    <main>
-        <section id="misterios">
-            <h2 class="center">Mistérios do Terço</h2>
-            <h3>Mistérios Gozosos (Segunda-feira e Sábado)</h3>
-
-            <ol>
-                <li>Mistério Contemplamos – A Anunciação do Anjo e a Encarnação do Verbo.
-                <li>Mistério Contemplamos – A visitação de Maria a sua prima Santa Isabel.
-                <li>Mistério Contemplamos – Nascimento do Menino Jesus, na gruta fria em Belém.
-                <li>Mistério Contemplamos – A apresentação do Menino Jesus no templo, e a purificação de Maria.
-                <li>Mistério Contemplamos – A perda e o encontro do Menino Jesus no templo.
-            </ol>
-            <h3>Mistérios Luminosos (Quinta-feira)</h3>
-            <ol>
-                <li>Mistério Contemplamos – Batismo de Nosso Senhor Jesus Cristo no rio Jordão.
-                <li>Mistério Contemplamos – Primeiro milagre de Jesus transformando a água em vinho nas bodas de Caaná.
-                <li>Mistério Contemplamos – Anunciação do Reino de Deus e o convite à conversão.
-                <li>Mistério Contemplamos – A transfiguração de Nosso Senhor no Monte Thabor.
-                <li>Mistério Contemplamos – A Instituição da Eucaristia na Última Ceia.
-            </ol>
-            <h3>Mistérios Dolorosos (Terça e Sexta-feira)</h3>  
-            <ol>
-                <li>Mistério Contemplamos –  A oração e agonia no Horto das Oliveira.
-                <li>Mistério Contemplamos – Flagelação de Nosso Senhor Jesus Cristo.
-                <li>Mistério Contemplamos –  A coroação de espinhos de Nosso Senhor Jesus Cristo.
-                <li>Mistério Contemplamos – Nosso Senhor carregando a Cruz às costas.
-                <li>Mistério Contemplamos – A Crucifixão e morte de Nosso Senhor Jesus Cristo.
-            </ol>
-            <h3>Mistérios Gloriosos (Quarta-feira e Domingo)</h3>
-            <ol>
-                <li>Mistério Contemplamos – A Ressurreição de Nosso Senhor Jesus Cristo.
-                <li>Mistério Contemplamos – A Ascensão de Nosso Senhor Jesus Cristo.
-                <li>Mistério Contemplamos – A descida do Espírito Santo.
-                <li>Mistério Contemplamos – A Assunção de Nossa Senhora aos Céus de corpo e alma
-                <li>Mistério Contemplamos – A Coroação de Nossa Senhora como Rainha do Céu  e da Terra dos Anjos e dos Homens.
-            </ol>
-        </section>
-        <h2 class="center">Orações do Terço</h2>
-        <section>
-            <iframe src="card.html" frameborder="0">
-                Perdão, seu navagador não é compatível com está função :(
-            </iframe>
-        </section>
-    </main>
-    <footer>
-        <p>
-            <a href="https://www.instagram.com/m1guel.cb/" rel="external" target="_blank"><img src="imagens/logo-instagram.jpg" alt="Instagram"> M1guel.cb</a> - <a href="https://www.instagram.com/jusc_itu/" rel="external" target="_blank"><img src="imagens/logo-instagram.jpg" alt="Instagram"> JUSC_itu</a>
-        </p>
-    </footer>
-</body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guia Para o Terço</title>
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <link rel="stylesheet" href="assets/styles/mq.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <style>
+            main {
+                width: 700px;
+                margin: auto;
+            }
+            p {
+                text-indent: 30px;
+            }
+            section {
+                padding: 20px;
+                flex-wrap: wrap;
+                gap: 10%;
+                color: white;
+                padding-top: 0;
+            }
+            section a {
+                width: 45%;
+                height: 60px;
+                margin-bottom: 10px;
+                border: 5px solid #15a6e0;
+                border-radius: 20px;
+                transition: 0.2s;
+            }
+            button {
+                background-color: transparent;
+                color: #15a6e0;
+                border: none;
+                width: 100%;
+                height: 100%;
+                font-weight: 600;
+                font-size: 1.3em;
+                cursor: pointer;
+            }
+            small {
+                font-family: Arial, Helvetica, sans-serif;
+                width: 45%;
+                text-align: center;
+            }
+            section a:hover {
+                transform: translateY(-10px);
+            }
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="assets/images/jusc-azul.png" alt="JUSC" id="jusc-logo" />
+            <h1>Guia Para o Terço</h1>
+        </header>
+        <main>
+            <h2 class="center" id="meio">Bem-vindo(a)!</h2>
+            <p>Bem vindo ao site do terço do JUSC (Jovens Unidos de São Cristovão), este é um lugar destinado a auxiliar os jovens e pessoas que desejam partcipar do terço porém não conhecem as orações. Para acessa-lo, escolha a opção que corresponde ao seu aparelho atual</p>
+            <section id="botoes">
+                <a href="card-page.html"><button>Versão com card</button></a>
+                <a href="text-page.html"><button>Versão somente com texto</button></a>
+                <small>*Recomendado para telas grandes, computadores e tablets</small>
+                <small>*Recomendado para celulares e telas pequenas</small>
+            </section>
+        </main>
+        <footer>
+            <p>
+                <a href="https://www.instagram.com/m1guel.cb/" rel="external" target="_blank"><img src="assets/images/logo-instagram.jpg" alt="Instagram" /> M1guel.cb</a> - <a href="https://www.instagram.com/jusc_itu/" rel="external" target="_blank"><img src="assets/images/logo-instagram.jpg" alt="Instagram" /> JUSC_itu</a>
+            </p>
+        </footer>
+    </body>
 </html>
