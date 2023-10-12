@@ -47,10 +47,23 @@
             }
 
             .face {
-                height: 92vw;
+                height: 75vw;
                 width: 92vw;
                 position: absolute;
                 border-radius: 3%;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 25px;
+            }
+
+            .face h2 {
+                width: 100%;
+            }
+
+            .face p {
+                margin: 0;
+                text-align: justify;
             }
 
             .flip {
@@ -69,10 +82,28 @@
             button {
                 width: 32%;
                 padding: 20px;
-                margin: 10px 0;
+                background-color: rgb(21, 166, 224);
+                color: black;
+                border: none;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                margin-bottom: 5px;
+                font-size: 1.2em;
+                border-radius: 10px;
             }
             #front img {
-                width: 100%;
+                width: calc(100% + 50px);
+                transform: translate(-25px, -25px);
+            }
+            .face > div > h2 {
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 2em;
+            }
+            .face > div > p {
+                margin-bottom: 15px;
+                line-height: 25px;
+                font-size: 1.3em;
             }
         </style>
     </head>

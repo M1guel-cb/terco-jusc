@@ -6,6 +6,7 @@
         <title>Guia Para o Terço</title>
         <link rel="stylesheet" href="assets/styles/style.css" />
         <link rel="stylesheet" href="assets/styles/mq.css" />
+        <link rel="stylesheet" href="assets/styles/mq-index.css" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <style>
             main {
@@ -52,6 +53,14 @@
                 position: fixed;
                 bottom: 0;
                 width: 100%;
+            }
+            @media screen and (max-width: 700px) {
+                main {
+                    width: 100%;
+                }
+                footer {
+                    position: static;
+                }
             }
         </style>
     </head>
