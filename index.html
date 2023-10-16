@@ -8,61 +8,6 @@
         <link rel="stylesheet" href="assets/styles/mq.css" />
         <link rel="stylesheet" href="assets/styles/mq-index.css" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <style>
-            @charset "UTF-8";
-            @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-            main {
-                width: 700px;
-                margin: auto;
-                margin-bottom: 50px
-            }
-            p {
-                text-indent: 30px;
-            }
-            section {
-                padding: 20px;
-                flex-wrap: wrap;
-                gap: 10%;
-                color: white;
-                padding-top: 0;
-            }
-            section a {
-                width: 45%;
-                height: 60px;
-                margin-bottom: 10px;
-                border: 3.5px solid #15a6e0;
-                border-radius: 20px;
-                transition: 0.2s;
-                height: 100px;
-            }
-            button {
-                background-color: transparent;
-                color: #15a6e0;
-                border: none;
-                width: 100%;
-                height: 100%;
-                font-weight: 600;
-                font-size: 1.3em;
-                cursor: pointer;
-                height: 90px;
-            }
-            small {
-                font-family: Arial, Helvetica, sans-serif;
-                width: 45%;
-                text-align: center;
-            }
-            section a:hover {
-                transform: translateY(-10px);
-            }
-            @media screen and (max-width: 700px) {
-                main {
-                    width: 100%;
-                }
-                footer {
-                    position: static;
-                }
-            }
-        </style>
     </head>
     <body>
         <header>
@@ -73,9 +18,9 @@
             <h2 class="center" id="meio">Bem-vindo(a)!</h2>
             <p>Bem vindo ao site do terço do JUSC (Jovens Unidos de São Cristovão), este é um lugar destinado a auxiliar os jovens e pessoas que desejam partcipar do terço porém não conhecem as orações. Para acessa-lo, escolha a opção que corresponde ao seu aparelho atual</p>
             <section id="botoes">
-                <a href="card-page.html"><button>Versão com card</button></a>
+                <a class="primeiro" href="card-page.html"><button>Versão com card</button></a>
                 <a href="text-page.html"><button>Versão somente com texto</button></a>
-                <small>*Recomendado para telas grandes, computadores e tablets</small>
+                <small class="primeiro">*Recomendado para telas grandes, computadores e tablets</small>
                 <small>*Recomendado para celulares e telas pequenas<br>***PROTÓTIPO</small>
             </section>
         </main>
