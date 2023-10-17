@@ -27,5 +27,4 @@ function flip(n) {
         card.classList.toggle('flip');
         count++;
     }
-    console.log(count);
 }
