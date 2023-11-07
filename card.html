@@ -114,6 +114,17 @@
                 width: calc(100% + 25px);
                 transform: translatey(-25px);
             }
+
+            button#ultimo {
+                width: 98%;
+                height: 96px;
+            }
+
+            button:hover {
+                transition: .3s ease-out;
+                scale: 1.025;
+            }
+
             @media (max-width: 650px) {
                 .face > div > p {
                     font-size: 1em;
@@ -153,8 +164,9 @@
             <button onclick="flip(1)">Creio</button>
             <button onclick="flip(2)">Pai Nosso e Ave Maria</button>
             <button onclick="flip(3)">Glória ao Pai e Ó Meu Jesus</button>
-            <button onclick="flip(4)">Salve Rainha</button>
-            <button onclick="flip(5)">Oração da Medalha de São Bento</button>
+            <button onclick="flip(4)">Agradecimento</button>
+            <button onclick="flip(5)">Salve Rainha</button>
+            <button onclick="flip(6)" id="ultimo">Oração da Medalha de São Bento</button>
         </div>
     </body>
     <script src="assets/scripts/script.js"></script>
