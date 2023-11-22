@@ -1,33 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Guia Para o Terço</title>
-        <link rel="stylesheet" href="assets/styles/style.css" />
-        <link rel="stylesheet" href="assets/styles/mq.css" />
-        <link rel="stylesheet" href="assets/styles/mq-index.css" />
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    </head>
-    <body>
-        <header>
-            <img src="assets/images/jusc-azul.png" alt="JUSC" id="jusc-logo" />
-            <h1>Guia Para o Terço</h1>
-        </header>
-        <main>
-            <h2 class="center" id="meio">Bem-vindo(a)!</h2>
-            <p>Bem vindo ao site do terço do JUSC (Jovens Unidos de São Cristovão), este é um lugar destinado a auxiliar os jovens e pessoas que desejam partcipar do terço porém não conhecem as orações. Para acessa-lo, escolha a opção que corresponde ao seu aparelho atual</p>
-            <section id="botoes">
-                <a class="primeiro" href="card-page.html"><button>Versão com card</button></a>
-                <a href="text-page.html"><button>Versão somente com texto</button></a>
-                <small class="primeiro">*Recomendado para telas grandes, computadores e tablets</small>
-                <small>*Recomendado para celulares e telas pequenas</small>
-            </section>
-        </main>
-        <footer>
-            <p>
-                <a href="https://www.instagram.com/m1guel.cb/" rel="external" target="_blank"><img src="assets/images/logo-instagram.jpg" alt="Instagram" /> M1guel.cb</a> - <a href="https://www.instagram.com/jusc_itu/" rel="external" target="_blank"><img src="assets/images/logo-instagram.jpg" alt="Instagram" /> JUSC_itu</a>
-            </p>
-        </footer>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css">
+    <title>Guia para o terço</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/jusc-azul.png" alt="JUSC" id="jusc-logo">
+        <h1>Guia Para o Terço</h1>
+    </header>
+
+    <main>
+        <!--section id="post_insta">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CtrW5ZmuH0Z/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CtrW5ZmuH0Z/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver essa foto no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CtrW5ZmuH0Z/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação compartilhada por Jovens Unidos de São Cristóvão (@jusc_itu)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+        </section-->
+
+        <section id="misterios">
+            <h2 class="center">Mistérios do Terço</h2>
+            <h3>Mistérios Gozosos (Segunda-feira e Sábado)</h3>
+
+            <ol>
+                <li>Mistério Contemplamos – A Anunciação do Anjo e a Encarnação do Verbo.
+                <li>Mistério Contemplamos – A visitação de Maria a sua prima Santa Isabel.
+                <li>Mistério Contemplamos – Nascimento do Menino Jesus, na gruta fria em Belém.
+                <li>Mistério Contemplamos – A apresentação do Menino Jesus no templo, e a purificação de Maria.
+                <li>Mistério Contemplamos – A perda e o encontro do Menino Jesus no templo.
+            </ol>
+
+            <h3>Mistérios Luminosos (Quinta-feira)</h3>
+            <ol>
+                <li>Mistério Contemplamos – Batismo de Nosso Senhor Jesus Cristo no rio Jordão.
+                <li>Mistério Contemplamos – Primeiro milagre de Jesus transformando a água em vinho nas bodas de Caaná.
+                <li>Mistério Contemplamos – Anunciação do Reino de Deus e o convite à conversão.
+                <li>Mistério Contemplamos – A transfiguração de Nosso Senhor no Monte Thabor.
+                <li>Mistério Contemplamos – A Instituição da Eucaristia na Última Ceia.
+            </ol>
+
+            <h3>Mistérios Dolorosos (Terça e Sexta-feira)</h3>  
+            <ol>
+                <li>Mistério Contemplamos –  A oração e agonia no Horto das Oliveira.
+                <li>Mistério Contemplamos – Flagelação de Nosso Senhor Jesus Cristo.
+                <li>Mistério Contemplamos –  A coroação de espinhos de Nosso Senhor Jesus Cristo.
+                <li>Mistério Contemplamos – Nosso Senhor carregando a Cruz às costas.
+                <li>Mistério Contemplamos – A Crucifixão e morte de Nosso Senhor Jesus Cristo.
+            </ol>
+
+            <h3>Mistérios Gloriosos (Quarta-feira e Domingo)</h3>
+            <ol>
+                <li>Mistério Contemplamos – A Ressurreição de Nosso Senhor Jesus Cristo.
+                <li>Mistério Contemplamos – A Ascensão de Nosso Senhor Jesus Cristo.
+                <li>Mistério Contemplamos – A descida do Espírito Santo.
+                <li>Mistério Contemplamos – A Assunção de Nossa Senhora aos Céus de corpo e alma
+                <li>Mistério Contemplamos – A Coroação de Nossa Senhora como Rainha do Céu  e da Terra dos Anjos e dos Homens.
+            </ol>
+        </section>
+        <h2 class="center" id="meio">Orações do Terço</h2>
+        <section id="oracoes">
+            <div>
+                <h2>Oferecimento do Terço</h2>
+                <p>Divino Jesus, nós Vos oferecemos este terço que vamos rezar, meditando nos mistérios da Vossa Redenção. Concedei-nos, por intercessão da Virgem Maria, Mãe de Deus e nossa Mãe, as virtudes que nos são necessárias para bem rezá-lo e a graça de ganharmos as indulgências desta santa devoção.</p>
+                <h2>Sinal da Cruz</h2>
+                <p>Em nome do Pai, do Filho e do Espírito Santo. Amém.</p>
+            </div>
+
+            <div>
+                <h2>Creio</h2>
+                <p>Creio em Deus Pai Todo-Poderoso, Criador do Céu e da Terra; e em Jesus Cristo, Seu único Filho, Nosso Senhor; Que foi concebido pelo poder do Espírito Santo. Nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto, sepultado; desceu a mansão dos mortos. Ressuscitou no terceiro dia. Subiu ao Céu, onde está sentado à direita de Deus Pai Todo-Poderoso, de onde há-de vir a julgar os vivos e os mortos. Creio no Espírito Santo, na Santa Igreja Católica, na Comunhão dos Santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém.</p>
+            </div>
+
+            <div>
+                <h2>Pai Nosso</h2>
+                <p>Pai nosso, que estais nos Céus, santificado seja o Vosso Nome; venha a nós o Vosso Reino, seja feita a Vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal.  Amém.</p>
+                <h2>Ave Maria</h2>
+                <p>Ave Maria, cheia de graça, o Senhor é convosco; bendita sois Vós entre as mulheres e bendito é o fruto do Vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém.</p>
+            </div>
+
+            <div>
+                <h2>Glória</h2>
+                <p>Glória ao Pai, ao Filho e ao Espírito Santo. Assim como era no princípio, agora e sempre, pelos séculos dos séculos. Amem</p>
+                <h2>Ó meu Jesus</h2>
+                <p>Ó meu Jesus, perdoai-nos e livrai-nos do fogo do inferno; levai as almas todas para o Céu, e socorrei principalmente as que mais precisarem da vossa infinita misericórdia.</p>
+            </div>
+
+            <div>
+                <h2>Salve Rainha</h2>
+                <p>Infinitas graças vos damos, ó Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos maternais. Dignai-vos, agora e para sempre tomar-nos debaixo do vosso poderoso amparo e para mais vos agradecer, vos saudamos com uma Salve Rainha:</p>
+                <p>Salve, Rainha, Mãe de Misericórdia, vida, doçura e esperança nossa, Salve. A Vós bradamos, os degredados filhos de Eva. A Vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, Advogada nossa, esses Vossos olhos misericordiosos a nós volvei; e depois deste desterro nos mostrai Jesus, bendito Fruto do Vosso ventre. Ó clemente, ó piedosa, ó doce sempre Virgem Maria.
+                </p>
+                <p>
+                    Rogai por nós, Santa Mãe de Deus; para que sejamos dignos das promessas de Cristo. Amém.
+                </p>
+            </div>
+            <div>
+                <h2>Oração da Medalha de São Bento</h2>
+                <p>A Cruz sagrada seja a minha Luz. Não seja o Dragão meu guia. Retira-te Satanás! Nunca me aconselhes coisas vãs. É mal o que tu me ofereces. Bebe tu mesmo do teu veneno! (3x)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://www.instagram.com/m1guel.cb/" rel="external" target="_blank"><img src="imagens/logo-instagram.jpg" alt="Instagram"> M1guel.cb</a> - <a href="https://www.instagram.com/jusc_itu/" rel="external" target="_blank"><img src="imagens/logo-instagram.jpg" alt="Instagram"> JUSC_itu</a>
+        </p>
+    </footer>
+</body>
 </html>
