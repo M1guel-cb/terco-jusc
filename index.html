@@ -6,8 +6,86 @@
         <title>Guia Para o Terço</title>
         <link rel="stylesheet" href="assets/styles/style.css" />
         <link rel="stylesheet" href="assets/styles/mq.css" />
-        <link rel="stylesheet" href="assets/styles/mq-index.css" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+            @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+            body {
+                width: 100%;
+                min-height: 100vh;
+                font-family: "Poppins", Arial, Helvetica, sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            header {
+                height: 200px;
+            }
+            #jusc-logo {
+                height: 175px;
+            }
+            header > h1 {
+                font-size: 1.5em;
+                font-family: 'Ephesis';
+                text-decoration: none;
+            }
+            main > p,
+            main > h2 {
+                padding: 0;
+            }
+            main > p {
+                text-indent: 30px;
+            }
+            main {
+                margin: 0 auto;
+                width: 100%;
+                max-width: 600px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+            }
+            div {
+                border: none;
+                padding: 0;
+                margin: 0;
+            }
+            main div a {
+                width: 100%;
+                padding: 15px;
+                text-align: center;
+                background-color: #15a6e0;
+                color: black;
+                border-radius: 10px;
+                font-weight: 600;
+            }
+            div#card, div#txt {
+                width: 50%;
+            }
+            div > a,
+            small {
+                text-decoration: none;
+                color: white;
+                display: block;
+                text-align: center;
+            }
+            a:hover {
+                scale: 1.075;
+                transition: .3s;
+            }
+            #botoes {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 15px;
+            }
+            main > h2.center {
+                padding: 0;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -15,13 +93,17 @@
             <h1>Guia Para o Terço</h1>
         </header>
         <main>
-            <h2 class="center" id="meio">Bem-vindo(a)!</h2>
-            <p>Bem vindo ao site do terço do JUSC (Jovens Unidos de São Cristovão), este é um lugar destinado a auxiliar os jovens e pessoas que desejam partcipar do terço porém não conhecem as orações. Para acessa-lo, escolha a opção que corresponde ao seu aparelho atual</p>
+            <h2 class="center">Bem-vindo(a)!</h2>
+            <p>Bem vindo ao site do terço do JUSC (Jovens Unidos de São Cristovão), este é um lugar destinado a auxiliar os jovens e pessoas que desejam partcipar do terço porém não conhecem as orações. Para acessa-lo, escolha a opção que corresponde ao seu aparelho atual:</p>
             <section id="botoes">
-                <a class="primeiro" href="card-page.html"><button>Versão com card</button></a>
-                <a href="text-page.html"><button>Versão somente com texto</button></a>
-                <small class="primeiro">*Recomendado para telas grandes, computadores e tablets</small>
-                <small>*Recomendado para celulares e telas pequenas</small>
+                <div id="card">
+                    <a href="card-page.html">Versão com card</a>
+                    <small>*Recomendado para telas grandes, computadores e tablets</small>
+                </div>
+                <div id="txt">
+                    <a href="text-page.html">Versão somente com texto</a>
+                    <small>*Recomendado para celulares e telas pequenas</small>
+                </div>
             </section>
         </main>
         <footer>
