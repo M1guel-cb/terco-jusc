@@ -80,6 +80,7 @@ main > section#oracoes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 }
 
 main p, main > section#misterios {
@@ -125,6 +126,10 @@ div {
     margin: 30px 0px 30px 0px;
     border-left: 1.4px solid white;
     border-right: 1.4px solid white;
+}
+
+div > a {
+    font-size: 1em;
 }
 
 #meio {
