@@ -136,6 +136,11 @@ div > a {
     padding: 20px 0 0 0;
 }
 
+iframe {
+    width: 600px;
+    height: 750px;
+}
+
 footer {
     background-color: rgb(66, 66, 66);
 }

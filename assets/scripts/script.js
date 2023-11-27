@@ -1,7 +1,7 @@
 const front = document.querySelector("#front");
 const back = document.querySelector("#back");
 var oracoes = [
-    "<div class='help-Deus'><h2>Oferecimento do Terço</h2><p>Divino Jesus, nós Vos oferecemos este terço que vamos rezar, meditando nos mistérios da Vossa Redenção. Concedei-nos, por intercessão da Virgem Maria, Mãe de Deus e nossa Mãe, as virtudes que nos são necessárias para bem rezá-lo e a graça de ganharmos as indulgências desta santa devoção.</p><h2>Sinal da Cruz</h2><p>Em nome do Pai, do Filho e do Espírito Santo. Amém.</p></div>",
+    "<div class='help-Deus'></p><h2>Sinal da Cruz</h2><p>Em nome do Pai, do Filho e do Espírito Santo. Amém.</p><h2>Oferecimento do Terço</h2><p>Divino Jesus, nós Vos oferecemos este terço que vamos rezar, meditando nos mistérios da Vossa Redenção. Concedei-nos, por intercessão da Virgem Maria, Mãe de Deus e nossa Mãe, as virtudes que nos são necessárias para bem rezá-lo e a graça de ganharmos as indulgências desta santa devoção.</div>",
 
     "<div class='help-Deus'><h2>Creio</h2><p>Creio em Deus Pai Todo-Poderoso, Criador do Céu e da Terra; e em Jesus Cristo, Seu único Filho, Nosso Senhor; Que foi concebido pelo poder do Espírito Santo. Nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto, sepultado; desceu a mansão dos mortos. Ressuscitou no terceiro dia. Subiu ao Céu, onde está sentado à direita de Deus Pai Todo-Poderoso, de onde há-de vir a julgar os vivos e os mortos. Creio no Espírito Santo, na Santa Igreja Católica, na Comunhão dos Santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém.</p></div>",
 
