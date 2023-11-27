@@ -17,6 +17,12 @@ var oracoes = [
 ];
 var count = 0;
 
+window.addEventListener('keydown', (e) => {
+    if (e.key < oracoes.length + 1 && e.key > 0) {
+        flip(e.key - 1);
+    }
+});
+
 function flip(n) {
     if (count % 2 == 0) {
         //Trás da carta
