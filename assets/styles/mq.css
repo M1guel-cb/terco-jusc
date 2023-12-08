@@ -7,11 +7,11 @@
         flex-direction: column;
         width: 100%;
     }
-    div > small, div > a, main div#card, main div#txt {
+    main > div > small, main > div > a, main div#card, main div#txt {
         width: 100%;
     }
-    div > a {
-        font-size: 1.4em;
+    main > div > a, header > h1 {
+        font-size: 1.3em;
     }
     #index-p {
         padding: 0 10px;
@@ -19,10 +19,13 @@
     a:hover {
         scale: 1;
     }
+    div#voltar {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    header > h1 {
+    body > header > h1 {
         float: none;
         font-size: 1em;
         margin-right: 0px;
